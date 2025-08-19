@@ -1,5 +1,24 @@
 # Rapport d'Analyse : Conception et Modélisation du Simulateur de Trafic Routier
 
+## Table des matières
+
+1. [Introduction](https://github.com/Wartets/Autoroutes/tree/main#1-introduction)  
+2. [Architecture du Simulateur](#2-architecture-du-simulateur)  
+3. [Fondements Conceptuels de la Modélisation](#3-fondements-conceptuels-de-la-modélisation)  
+   - [Représentation de l'Infrastructure Routière](#31-représentation-de-linfrastructure-routière)  
+   - [Caractérisation des Véhicules](#32-caractérisation-des-véhicules)  
+   - [Modélisation des Comportements de Conduite](#33-modélisation-des-comportements-de-conduite)  
+   - [Prise de Décision et Manœuvres Latérales](#34-prise-de-décision-et-manœuvres-latérales)  
+   - [Facteurs Environnementaux et Adaptation](#35-facteurs-environnementaux-et-adaptation)  
+4. [Fonctionnalités Clés et Mécanismes de Simulation](#4-fonctionnalités-clés-et-mécanismes-de-simulation)  
+   - [Gestion des Collisions et Accidents](#41-gestion-des-collisions-et-accidents)  
+   - [Comportement d'Accélération/Décélération](#42-comportement-daccélérationdécélération)  
+   - [Logique de Changement de Voie](#43-logique-de-changement-de-voie)  
+   - [Adaptation des Comportements](#44-adaptation-des-comportements)  
+   - [Effets Météorologiques](#45-effets-météorologiques)  
+5. [Déroulement de la Simulation (`run_simulation`)](#5-déroulement-de-la-simulation-run_simulation)  
+6. [Mesures et Analyse des Résultats](#6-mesures-et-analyse-des-résultats)  
+
 ## 1. Introduction
 
 Ce rapport présente une analyse détaillée de la conception et des principes de modélisation sous-jacents au simulateur de trafic routier. L'objectif principal de ce script Python est de reproduire la dynamique du trafic sur une infrastructure routière multi-voies, en intégrant des comportements automobiles réalistes, des interactions complexes entre véhicules, et des facteurs environnementaux variés.  
